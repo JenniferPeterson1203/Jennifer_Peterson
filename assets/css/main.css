@@ -6,6 +6,26 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/* 
+html {
+  scroll-behavior: smooth;
+} */
+
+.contact-icons {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the icons */
+}
+
+.contact-icons li {
+  margin: 0 10px;
+}
+
+.contact-icons a {
+  font-size: 1.5em;
+  color: inherit;
+}
 
 html,
 body,
