@@ -11,6 +11,21 @@ html {
   scroll-behavior: smooth;
 } */
 
+.features .image {
+  position: relative;
+  display: inline-block;
+}
+
+.features .image img {
+  /* transition: transform 0.3s ease, opacity 0.3s ease; */
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features .image:hover img {
+  transform: scale(1.1); /* Slight zoom effect */
+  opacity: 0.8; /* Slight transparency */
+}
+
 .contact-icons {
   list-style: none; /* Remove bullets */
   padding: 0;
@@ -130,6 +145,29 @@ section {
   display: block;
 }
 
+/* nav */
+#nav ul li a {
+  display: block;
+  padding: 0.85em 1em;
+  text-decoration: none;
+  color: #ffffff; /* Default text color */
+  background-color: #4acaa8; /* Default background color */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#nav ul li a:hover {
+  background-color: #5ed0b1; /* Change background color on hover */
+  color: #ffffff; /* Ensure text remains visible */
+  transform: scale(1.05); /* Slightly enlarge the link */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+#nav ul li a.active {
+  background-color: #39c29d; /* Highlight active link */
+  color: #ffffff;
+  font-weight: bold; /* Make the active link stand out */
+}
 body {
   line-height: 1;
 }
@@ -3488,4 +3526,39 @@ input[type="button"]:disabled,
 
 #contact a:hover {
   color: #0077b5; /* Change color on hover */
+}
+
+.fun-facts {
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px auto;
+  max-width: 600px; /* Center and limit width */
+}
+
+.fun-facts h3 {
+  font-size: 1.5em;
+  color: #4acaa8; /* Accent color */
+  margin-bottom: 15px;
+}
+
+.fun-facts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fun-facts li {
+  font-size: 1.2em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fun-facts li i {
+  color: #4acaa8; /* Icon color */
+  margin-right: 10px;
+  font-size: 1.5em;
 }
